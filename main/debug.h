@@ -2,11 +2,11 @@
 #include <stdint.h>
 #include <string.h>
 
-inline auto log(char const *name, const char *v) {
+inline auto log(char const *name, char const *v) -> char const * {
     printf("%s :\t%s\n", name, v);
     return v;
 }
-inline auto log(char const *name, int32_t v) {
+inline auto log(char const *name, int32_t v) -> int32_t {
     printf("%s :\t%#010x\n", name, v);
     return v;
 }
